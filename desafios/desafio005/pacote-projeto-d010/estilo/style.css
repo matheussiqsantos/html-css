@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+:root {
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: #78cc9d;
+} 
+header {
+    background-image: linear-gradient(to bottom, #3CD680, #387953, #0e3520);
+    text-align: center;
+    color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -21px;
+    height: 248px;
+}
+
+h1 {
+    padding: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0%;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.534);
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+nav {
+    text-align: left;
+    margin-top: 50px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 10px 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    color: #1d6b40;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-decoration: none;
+}
+
+
+h3, h4{
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    color: #185B36;
+    margin: auto;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+    background-image: linear-gradient(to right, #a8cab785, white );
+    padding-left: 10px;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 25px 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.479);
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+}
+
+p { width: 100%;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    color: #1d6b40;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+p > a {
+    font-weight: 500;
+    color: #1d6b40;
+    text-decoration: none;
+}
+
+p > a::after {
+    content: '\1F517'
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    width: 90%; 
+    height: 90%;
+    position: absolute;   
+    top: 5%;
+    left: 5%;
+}    
+ 
+
+.video {
+    max-width: 100%;
+    background-color: #1A5C38;
+    padding: 20px;
+    padding-bottom: 57.2%;
+    margin: 0px -20px 40px -20px;
+    position: relative;
+}
+
+.versoes {
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+h5 {
+    background-color: #2FA866;
+    color: white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 20px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+ul {
+    color: #1A5C38;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    width: 50%;
+}
+
+li::before {
+    content: '🗸'
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin: 10px -8px -8px -8px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
