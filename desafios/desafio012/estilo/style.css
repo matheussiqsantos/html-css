@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+    --fonte01: Verdana, Geneva, sans-serif;
+    --fonte02: "Edu NSW ACT Foundation", cursive;
+    --fonte03: "Rowdies", sans-serif;
+}
 
 * {
     margin: 0px;
@@ -8,6 +15,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 
 header {
@@ -19,6 +27,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte03);
+    font-size: 5.5vw;
 }
 
 header > p {
@@ -40,6 +50,9 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte02);
+    font-size: 3vw;
+    font-weight: bold;
 }
 
 section.normal {
@@ -54,7 +67,9 @@ section.image {
 
 section.image > p {
     background-color: rgba(0, 0, 0, 0.336);
-    width: 500px;
+    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 
