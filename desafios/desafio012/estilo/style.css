@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 :root {
     --fonte01: Verdana, Geneva, sans-serif;
-    --fonte02: "Edu NSW ACT Foundation", cursive;
+    --fonte02: "Playpen Sans", cursive;
     --fonte03: "Rowdies", sans-serif;
 }
 
@@ -51,8 +52,11 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte02);
-    font-size: 3vw;
-    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -63,14 +67,27 @@ section.normal {
 section.image {
     background-color: rgb(31, 28, 28);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.image > p {
     background-color: rgba(0, 0, 0, 0.336);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
 
 footer {
     background-color: rgb(75, 21, 21);
