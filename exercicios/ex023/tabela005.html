@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr.destaque {
+            background-color: rgb(0, 110, 255);
+            font-weight: bold;
+            color: white;
+        }
+
+        col.cNome {
+            background-color: rgb(172, 16, 16);
+        }
+
+        col.cGrupo {
+            background-color: rgb(199, 138, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cNome">
+            <col class="cGrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Escritor</td>
+        </tr>
+        <tr>
+            <td>Enzo</td>
+            <td>M</td>
+            <td>12</td>
+            <td>Jogador de LOL</td>
+        </tr>
+        <tr>
+            <td>Jaime</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr class="destaque">
+            <td>Isabela</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Linda</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Biomédica</td>
+        </tr>
+        <tr class="destaque">
+            <td>Matheus</td>
+            <td>M</td>
+            <td>16</td>
+            <td>Namorado da Isa</td>
+        </tr>
+    </table>
+</body>
+</html>
